@@ -1,0 +1,16 @@
+{
+    "site": {
+        "language": "zh-TW",
+        "title": "title",
+        "description": "desc",
+        "keywords": "keyword"
+    },
+    "og": {
+        "title": "title",
+        "site_name": "site_name",
+        "url": "url",
+        "image": "image_url",
+        "description": "desc",
+        "type": "website"
+    }
+}

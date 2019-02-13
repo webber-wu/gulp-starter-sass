@@ -1,0 +1,25 @@
+doctype html
+block vars
+html(lang=site.language)
+    head
+        meta(charset="UTF-8")
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(name='keywords',  content=site.keywords)
+        block page_description
+            meta(name='description', content=site.description)
+        meta(property='og:title', content=og.title)
+        meta(property='og:site_name', content=og.site_name)
+        meta(property='og:url', content=og.url)
+        meta(property='og:image', content=og.image)
+        meta(property='og:description', content=og.description)
+        meta(property='og:type', content=og.type)
+        meta(property='fb:admin', content='')
+        title
+            block window_title
+                = site.title
+        link(rel='shortcut icon', type='png', href='assets/images/favicon.png')
+        link(rel='stylesheet', media='screen', type='text/css', href='assets/css/style.css')
+        <!--[if lt IE 10]>
+        link(rel='stylesheet', media='screen', type='text/css', href='assets/css/ie.css')
+        <![endif]-->
+    block pageBody
